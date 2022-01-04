@@ -5,7 +5,7 @@ class ListNode:
         self.next = next
 class Solution:
     
-    def lst2link(self, lst):
+    def convert_to_linked_list(self, lst):
         cur = dummy = ListNode(0)
         for e in lst:
             cur.next = ListNode(e)
@@ -29,4 +29,4 @@ class Solution:
         if carry:
             _sum += str(carry)
 
-        return self.lst2link([i for i in _sum])
+        return self.convert_to_linked_list([i for i in _sum])
