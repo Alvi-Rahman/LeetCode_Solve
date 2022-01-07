@@ -12,7 +12,6 @@ class Solution:
             head = head.next
 
     def getRandom(self) -> int:
-        import random
         return random.choice(self.lst)
 
 
