@@ -2,7 +2,8 @@ class Solution:
     def convert(self, s: str, numRows: int) -> str:
         if numRows < 2:
             return s
-        zigzag_lst = [[] for i in range(numRows)]
+        import numpy
+        zigzag_lst = numpy.empty((numRows, 0)).tolist()
         mod_val = numRows - 1
         for i, c in enumerate(s):
             if int(i / mod_val) % 2 == 0:
